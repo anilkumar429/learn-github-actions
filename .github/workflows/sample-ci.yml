@@ -11,21 +11,25 @@ jobs:
     steps:
       - run: echo OK
   Dev_deploy:
+    environment: Dev
     runs-on: self-hosted
     needs: Test
     steps:
       - run: echo OK
   Qa_Deploy:
+    environment: Qa
     runs-on: self-hosted
     needs: Dev_deploy
     steps:
       - run: echo OK
   Uat_Deploy:
+    environment: Uat
     runs-on: self-hosted
     needs: Qa_deploy
     steps:
       - run: echo OK
   Prod_Deploy:
+    environment: Prod
     runs-on: self-hosted
     needs: Uat_Deploy
     steps:

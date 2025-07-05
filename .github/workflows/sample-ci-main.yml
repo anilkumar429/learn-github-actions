@@ -6,6 +6,6 @@ on:
       - 'main'
 jobs:
   ReUse:
-    uses: anilkumarm429/learn-github-actions/.github/workflows/ci-reusable.yml@main
+    uses: anilkumarm429/learn-github-actions/.github/workflows/ci-dev.yml@main
 
 
